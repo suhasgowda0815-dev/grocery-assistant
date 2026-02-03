@@ -1,3 +1,13 @@
+import sys
+import os
+sys.path.insert(0, '/app/.packages')
+
+from flask import Flask, render_template, request, jsonify
+import boto3
+import json
+
+# ... rest of your code
+
 from flask import Flask, render_template, request, jsonify
 import boto3
 import json

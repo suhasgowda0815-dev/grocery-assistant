@@ -1,0 +1,13 @@
+version: 1.0
+runtime: python3
+build:
+  commands:
+    build:
+      - pip3 install -r requirements.txt
+run:
+  command: python3 app.py
+  network:
+    port: 8080
+  env:
+    - name: AWS_DEFAULT_REGION
+      value: ap-south-1

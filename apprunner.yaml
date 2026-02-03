@@ -15,8 +15,4 @@ run:
 
 ---
 
-### **File 3: `requirements.txt`** (in root)
-```
-Flask==3.0.0
-boto3==1.34.0
-Werkzeug==3.0.1
+

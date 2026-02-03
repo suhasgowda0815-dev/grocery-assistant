@@ -4,8 +4,9 @@ import json
 
 app = Flask(__name__)
 
-bedrock_runtime = boto3.client('bedrock-runtime', region_name='us-east-1')
-dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
+# UPDATED: Set to Mumbai region (ap-south-1)
+bedrock_runtime = boto3.client('bedrock-runtime', region_name='ap-south-1')
+dynamodb = boto3.resource('dynamodb', region_name='ap-south-1')
 
 def get_inventory_data():
     try:
